@@ -1,0 +1,130 @@
+/* CSS Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(45deg, #464545,#000000);
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+header p {
+    font-size: 14px;;
+    margin-top: 5px;
+}
+
+nav {
+    margin-top: 1.7rem;
+}
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Seção */
+section {
+    padding: 20px;
+    margin: 10px auto;
+    box-shadow: 0 04px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size:20px;
+}
+
+/* Article */
+article {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #10001f;
+}
+
+article a:hover{
+    color: #007aff;
+}
+
+/* Footer */
+footer {
+    color: #838285;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #22053d;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px
+}
+
+.home-text {
+    justify-content: left;
+    width: 40%;
+}
+
+
+.home-text h1, 
+.home-text p {
+    margin-bottom: 20px;
+}
+.home a {
+    color: #556B2F;
+    text-decoration: none;
+}
+.home a:hover {
+    text-decoration: underline;
+}
+.home img{
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+#about {
+    margin-top: 200px;
+    background-color: rgb(134, 134, 134);
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+      />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Cadastro Online</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#cadastro"
+                  >Cadastro</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="cadastro">
+        <form action="">
+            
+            <h1>Cadastro de Pessoa Física</h1>
+            <div>
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Maria José" required />
+            </div>
+            <div>
+              <label for="name">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Maria@gmail.com" required />
+            </div>
+            <div>
+              <label for="age">Idade</label>
+              <!-- como definir mínimo e máximo -->
+              <input type="number" min="1" max="120" required />
+            </div>
+            <div>
+              <label for="password">Senha</label>
+              <input type="password" required />
+              <div class="info">
+                <h3>Regras de senha</h3>
+                <ul>
+                  <li>Conter uma letra maiúscula</li>
+                  <li>Conter pelo menos um número</li>
+                  <li>Não conter informações pessoais</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <label for="password-confirm">Confirme sua senha</label>
+              <input type="password" />
+            </div>
+            <div>
+              <p>Selecione seu gênero</p>
+              <select name="gender" id="gender">
+                <option value="select">Selecione</option>
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+              </select>
+            </div>
+            <div id="terms">
+              <input type="checkbox" name="checkbox" id="checkbox" required />
+              <label for="checkbox">Aceito os termos e privacidade</label>
+            </div>
+            <button type="submit" id="submit">Enviar</button>
+                  
+        </form>
+    </section>
+    
+    <section id="html">
+        <h3>Evolução do HTML</h3>
+        <p>A evolução do HTML começou com a criação de Tim Berners-Lee em 1990, evoluindo do HTML 1.0 (básico)
+           para versões mais complexas como HTML 2.0 (1995) e HTML 4.01 (1999), que introduziram tabelas, formulários e melhorias de padrão.
+           A mudança mais significativa foi a chegada do HTML5 em 2014, que revolucionou a web com elementos multimídia nativos, tags semânticas e APIs
+           para aplicações mais ricas e interativas, além de ter
+           impulsionado a separação entre estrutura (HTML), estilo (CSS) e interatividade (JavaScript). </p>
+      </section>
+    </main>
+    <footer>
+      <div id="sobre">
+          <p>Criado por: Wilbsom Gonçalves da Silva</p>
+          <p>&copy; direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

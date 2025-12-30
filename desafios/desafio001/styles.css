@@ -1,0 +1,12 @@
+* {
+    margin:0;
+    padding: 0;
+}
+#cadastro{
+    border: 2px black   solid;
+  
+}
+
+.info{
+    padding: 20px;
+}

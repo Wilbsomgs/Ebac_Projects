@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GuessGame</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="game">
+        <h1 class="game-title" >GuessGame</h1>
+        <div class="how-to-play">
+            <div class="how-to-play-title">
+                <h2>Como funciona?</h2>
+            </div>
+            <p>
+              Será gerado um número aleatório, que tal adivinhar qual é o número? Digite
+              seu palpite abaixo e clique em "chutar"
+            </p>
+        </div>
+        <label for="attempt"></label>
+        <input id="attempt" type="number" />
+        <button type="button" onClick="generateRandomNumber()">Chutar</button>
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

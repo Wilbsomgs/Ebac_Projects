@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.game {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(178, 206, 206);
+    margin: 50px auto;
+    padding: 2rem;
+    max-width: 50%;
+    gap: 0.4rem;
+    align-items: center;
+}
+.how-to-play {
+    margin-top: 0.4rem;
+    max-width: 50%;
+}
+
+.how-to-play-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+}
+
+#message {
+    padding: 10px;
+    border: solid 1px black;
+    background-color: rgb(224, 224, 39);
+}

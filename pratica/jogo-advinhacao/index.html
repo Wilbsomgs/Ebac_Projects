@@ -7,20 +7,29 @@
   </head>
   <body>
     <div class="game">
-        <h1 class="game-title" >GuessGame</h1>
+        <h1 class="game-title" >ADIVINHE O NÚMERO!</h1>
         <div class="how-to-play">
             <div class="how-to-play-title">
-                <h2>Como funciona?</h2>
+                <h3>COMO JOGAR?</h3>
             </div>
-            <p>
-              Será gerado um número aleatório, que tal adivinhar qual é o número? Digite
-              seu palpite abaixo e clique em "chutar"
-            </p>
+            <ol>
+              <li>Escolha o número de 1 a 100</li>
+              <li>Digite o seu palpite</li>
+              <li>Receba dicas</li>
+              <li>Acerte o número secreto</li>
+            </ol>   
         </div>
         <label for="attempt"></label>
-        <input id="attempt" type="number" />
-        <button type="button" onClick="generateRandomNumber()">Chutar</button>
-        <p id="message"></p>
+        <div class="input-send">
+          <input id="attempt" type="number" placeholder="SEU PALPITE:" />
+          <button type="button" onclick="verifyAttempt()">CHUTAR</button>
+        </div>
+        <p id="win">Parabéns! Você acertou o número secreto!</p>
+        <p id="greater">Dica: Seu palpite é maior que o número secreto!</p>
+        <p id="lowest">Dica: Seu palpite é menor que o número secreto</p>
+        <div class="attempts">
+          <p id="attempts-id">TENTATIVAS: 5</p>
+        </div>
     </div>
 
     <script src="script.js"></script>

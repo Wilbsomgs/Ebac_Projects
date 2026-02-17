@@ -1,31 +1,112 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  background-color: rgba(2, 149, 207, 0.616);
+}
+
 .game {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(178, 206, 206);
-    margin: 50px auto;
-    padding: 2rem;
-    max-width: 50%;
-    gap: 0.4rem;
-    align-items: center;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  background-image:
+    linear-gradient(rgba(7, 77, 182, 0.705), rgba(120, 187, 241, 1)),
+    url(assets/van-gogh-noite-estrelada-de-fundo_1189613-1177.avif);
+  margin: 50px auto;
+  padding: 2rem;
+  max-width: 50%;
+  align-items: center;
+  min-width: 30rem;
+  border-radius: 20px;
+  height: 30rem;
+  gap: 0.4rem;
 }
+.game-title {
+  margin: 2rem auto;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
 .how-to-play {
-    margin-top: 0.4rem;
-    max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background-color: rgba(37, 37, 37, 0.397);
+  padding: 20px;
+  border-radius: 20px;
+  width: 70%;
+  margin: 1rem auto;
+  padding: 2rem;
 }
 
-.how-to-play-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0.8rem;
+.how-to-play ol {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  line-height: 1.3;
 }
 
-#message {
-    padding: 10px;
-    border: solid 1px black;
-    background-color: rgb(224, 224, 39);
+.input-send {
+  width: 70%;
+  margin-left: 55px;
+}
+
+input {
+  height: 2rem;
+  width: 70%;
+  border-radius: 0.4rem;
+}
+
+button {
+  width: 5rem;
+  border-radius: 20rem;
+  color: white;
+  height: 2rem;
+  background: linear-gradient(rgba(120, 187, 241, 1), rgba(7, 77, 182, 0.705));
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#win {
+  margin: auto auto;
+  padding: 0.9rem;
+  background-color: rgb(53, 124, 53);
+}
+
+#greater {
+  margin: auto auto;
+  padding: 0.9rem;
+  background-color: rgb(236, 35, 35);
+}
+#lowest {
+  margin: 0.9rem auto 0.1rem auto;
+  padding: 0.9rem;
+  background-color: rgb(236, 143, 56);
+}
+
+#win,
+#greater,
+#lowest {
+  display: none;
+}
+
+.attempts {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  font-weight: 900;
+  width: 80%;
+  margin-top: 0.2rem;
 }

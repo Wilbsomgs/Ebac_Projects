@@ -1,27 +1,46 @@
 let min = 1;
-let max = 100;  
-const randomNumber = Math.floor(Math.random() * (max - min) * min);
+let max = 100;
+let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
-const message = document.getElementById("message");
+const winMessage = document.getElementById("win");
+const greaterMessage = document.getElementById("greater");
+const lowestMessage = document.getElementById("lowest");
+const countingAttempts = document.getElementById("attempts-id");
 
-const winMessage = "Parabéns, você acertou o número aleatório";
-const greaterAttempt =  "Dica: o número aleatório é menor que o seu palpite";
-const lowestAttempt = "Dica: o número aleatório é maior que o seu palpite";
+let limitAttempt = 5;
 
-
-function generateRandomNumber(){
-
-  
-  let attempt = document.getElementById("attempt").value;
+// Função chamada ao clicar no botão CHUTAR
+function verifyAttempt() {
+  let attempt = parseInt(document.getElementById("attempt").value);
 
   console.log(randomNumber);
-  if(attempt < min||attempt > max){
+
+  if (attempt < min || attempt > max) {
     alert("Digite um número entre 1 - 100");
-  }else if(attempt == randomNumber){
-    message.textContent = winMessage;
-  } else if(attempt > randomNumber){
-    message.textContent = greaterAttempt;
-  }else if(attempt < randomNumber){
-    message.textContent = lowestAttempt;
+    winMessage.style.display = "none";
+    greaterMessage.style.display = "none";
+    lowestMessage.style.display = "none";
+  } else if (attempt === randomNumber) {
+    winMessage.style.display = "flex";
+    greaterMessage.style.display = "none";
+    lowestMessage.style.display = "none";
+  } else if (attempt > randomNumber) {
+    winMessage.style.display = "none";
+    greaterMessage.style.display = "flex";
+    lowestMessage.style.display = "none";
+
+    limitAttempt -= 1;
+  } else if (attempt < randomNumber) {
+    winMessage.style.display = "none";
+    greaterMessage.style.display = "none";
+    lowestMessage.style.display = "flex";
+    limitAttempt -= 1;
+  }
+
+  countingAttempts.innerText = 'TENTATIVAS:' + limitAttempt;
+  console.log(limitAttempt);
+
+  if (limitAttempt <= 0) {
+    alert("Suas tentativas acabaram");
   }
 }

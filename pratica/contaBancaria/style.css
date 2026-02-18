@@ -1,0 +1,40 @@
+.cash__container {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    padding: 2rem;
+    width: 30rem;
+    margin: 2rem auto;
+    gap: 1rem;
+    align-items: center;
+    color: #ffffff;
+    height: 30rem;
+    border-radius: 0.6rem;
+}
+
+.input__container {
+    display: flex; 
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1,5rem auto;
+}
+input {
+    padding: 0.5rem;
+}
+
+input,
+button {
+    border-radius: 0.3rem;
+    text-align: center;
+    border: none;
+}
+
+button {
+    background-color: rgba(9, 177, 9, 0.945);
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0.7rem;
+    cursor: pointer;
+
+}

@@ -8,19 +8,25 @@
 </head>
 <body>
     <main>
-     <div id="container">
+     <div id="container-form">
         <h1>Controle de Gastos</h1>
         <form>
-            <input id="value" type="number" placeholder="Digite o valor do gasto">
+            <div id="input-div">
+                <input id="value" type="number" placeholder="Digite o valor do gasto">
+            </div>
             
-            <select id="category">
-                <option value="food">Alimentação</option>
-                <option value="transport">Transporte</option>
-                <option value="pleasure">Lazer</option>
-                <option value="others">Outros</option>
-            </select>
+            <div id="select-div">
+                <select id="category">
+                    <option value="food">Alimentação</option>
+                    <option value="transport">Transporte</option>
+                    <option value="pleasure">Lazer</option>
+                    <option value="others">Outros</option>
+                </select>
+            </div>
 
-            <button type="button" onclick="addExpenses()">Adicionar</button>
+            <div id="button-div">
+                <button type="button" onclick="addExpenses()">Adicionar</button>
+            </div>
 
             <p id="food">Alimentação: R$0,00</p>
             <p id="transport">Transporte: R$0,00</p>

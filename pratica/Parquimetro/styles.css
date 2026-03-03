@@ -1,0 +1,27 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(3, 64, 155);
+    color: rgb(218, 200, 40);
+    padding: 0.4rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto auto;
+}
+
+th,
+td {
+    border: solid 1px black;
+    padding: 0.6rem;
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem 0 0.6rem 0;
+}

@@ -1,35 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parquímetro</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Parquímetro Sol Nascente</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+        <h1> <h1>Parquímetro Sol Nascente</h1></h1>
+    </header>
+   
     <p>Olá seja bem-vindo ao parquimetro sol nascente</p>
     <p>Aqui estimamos o valor a pagar pelo estacionamento do Parquímetro</p>
 
     <h2>Tabela de preços</h2>
     <table>
-        <tr>
-            <th>Valor</th>
-            <th>Tempo</th>
-        </tr>
-        <tr>
-            <td>R$1,00</td>
-            <td>30 minutos</td>
-        </tr>
-        <tr>
-            <td>R$1,75</td>
-            <td>60 minutos</td>
-        </tr>
-        <tr>
-            <td>R$3,00</td>
-            <td>120 minutos (tempo máximo permitido)</td>
-        </tr>
+      <tr>
+        <th>Valor</th>
+        <th>Tempo</th>
+      </tr>
+      <tr>
+        <td>R$1,00</td>
+        <td>30 minutos</td>
+      </tr>
+      <tr>
+        <td>R$1,75</td>
+        <td>60 minutos</td>
+      </tr>
+      <tr>
+        <td>R$3,00</td>
+        <td>120 minutos (tempo máximo permitido)</td>
+      </tr>
     </table>
+
+    <div>
+      <label for="tempoGasto">Tempo Gasto</label>
+      <input id="tempoGasto" type="textf" />
+      <button onclick="Calcular()">Calcular</button>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

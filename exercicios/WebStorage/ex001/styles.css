@@ -1,0 +1,16 @@
+#botaoTema {
+    text-align: center;
+    background-color: gray;
+    width: 2.5rem;
+    padding: 0.1rem;
+    
+}
+
+#botaoTema:hover {
+    cursor: pointer;
+}
+
+body.dark {
+    background-color: #333;
+    color: #eee;
+}

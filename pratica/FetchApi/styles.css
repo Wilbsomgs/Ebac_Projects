@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 4rem;
+    padding: 0.9rem;
+    border: solid 1px black;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+form h2 {
+    text-align: center;
+}
+
+form button {
+    background-color: rgb(85, 123, 194);
+    border: none;
+    margin-top: 0.5rem;
+    border-radius: 2rem;
+    height: 1.4rem;
+}
+
+body {
+    background-color:rgba(207, 203, 203, 0.884);
+}

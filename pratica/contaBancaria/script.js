@@ -15,7 +15,6 @@ class ContaBancaria {
     temSaldoParaSacar(valor) {
         return valor <= this.#saldo;
     }
-
     get saldo(){
         return this.#saldo;
     }

@@ -22,3 +22,32 @@ document.getElementById("cep").addEventListener("blur", (evento)=>{
         })
         .catch(error => console.error("Erro ao buscar o CEP: ", error));
 });
+
+
+const button = document.getElementById('cadastrar');
+const formInfo = ['cep', 'logradouro', 'bairro', 'localidade', 'uf', 'numero']
+
+button.addEventListener('click', ()=>{
+
+
+    for(i=0; i < formInfo.length; i++){
+       const info = document.getElementById(formInfo[i]).value
+       localStorage.setItem(formInfo[i], info) 
+    }
+
+    alert('Formulário enviado com sucesso!')
+
+})
+
+function carregarDadosSalvos(){
+    formInfo.forEach(id=>{
+        const valorSalvo = localStorage.getItem(id);
+        const campo = document.getElementById(id)
+
+        if(valorSalvo && campo){
+            campo.value = valorSalvo;
+        }
+    })
+}
+
+carregarDadosSalvos();
